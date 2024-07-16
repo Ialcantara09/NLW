@@ -14,7 +14,7 @@ public class ActivityService {
     private ActivityRepository repository;
 
     public ActivityResponse registerActivity(ActivityRequestPayload payload, Trip trip){
-        Activity newActivity = new Activity(payload.title(), payload.accurs_at(), trip);
+        Activity newActivity = new Activity(payload.title(), payload.occurs_at(), trip);
 
         this.repository.save(newActivity);
 

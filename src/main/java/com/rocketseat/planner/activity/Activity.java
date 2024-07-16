@@ -35,7 +35,6 @@ public class Activity {
     public Activity(String title, String occursAt, Trip trip){
         this.title = title;
         this.occursAt = LocalDateTime.parse(occursAt, DateTimeFormatter.ISO_DATE_TIME);
-        //this.occursAt = LocalDateTime.parse(occursAt, DateTimeFormatter.ISO_DATE_TIME);
         this.trip = trip;
     }
 }
